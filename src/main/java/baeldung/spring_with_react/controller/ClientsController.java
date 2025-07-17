@@ -25,7 +25,7 @@ public class ClientsController {
     }
 
     @GetMapping("/{id}")
-    public Client getClientsById(@PathVariable Long id){
+    public Client getClient(@PathVariable Long id){
         return clientRepository.findById(id).orElseThrow(RuntimeException::new);
     }
 
